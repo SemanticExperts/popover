@@ -5,6 +5,7 @@ on:
       version-number:
         type: string
         description: 'Version number'
+        default: 'v'
         required: true
       tag:
         type: string
