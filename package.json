@@ -1,18 +1,23 @@
 {
-  "name": "@material-extended/mde",
+  "name": "@brandonfl/material-extended-mde",
   "description": "Angular Material Extended",
   "version": "3.0.3",
   "author": {
     "name": "Joe Jordan Brown",
     "email": "joe.jordan.brown@gmail.com"
   },
+  "contributors": [
+    {
+      "name": "BrandonFL"
+    }
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/material-extended/mde"
+    "url": "https://github.com/brandonfl/popover"
   },
   "bugs": {
-    "url": "https://github.com/material-extended/mde/issues"
+    "url": "https://github.com/brandonfl/popover/issues"
   },
   "keywords": [
     "angular",
