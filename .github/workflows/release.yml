@@ -60,3 +60,4 @@ jobs:
           tag: ${{ env.TAG }}
           access: ${{ vars.NPM_ACCESS }}
           provenance: ${{ vars.NPM_PROVENANCE_ENABLED }}
+          strategy: ${{ vars.NPM_PROVENANCE_ENABLED }}
