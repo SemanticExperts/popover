@@ -8,14 +8,13 @@
   },
   "contributors": [
     {
-      "name": "BrandonFL"
+      "name": "BrandonFL",
+      "url": "https://brandonfl.dev/"
     }
   ],
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/brandonfl/popover"
-  },
+  "homepage": "https://github.com/brandonfl/popover",
+  "repository": "github:brandonfl/popover",
   "bugs": {
     "url": "https://github.com/brandonfl/popover/issues"
   },
@@ -48,7 +47,6 @@
     "release:beta": "standard-version --prerelease beta",
     "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^9.1.10",
     "@angular/cdk": "^9.2.4",
