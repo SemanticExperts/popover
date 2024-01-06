@@ -50,7 +50,7 @@ jobs:
           git push origin $VERSION_NUMBER --force || true
 
       - name: Publish
-        uses: brandonfl-archives/npm-publish@v3 # backup of the action JS-DevTools/npm-publish@v3
+        uses: brandonfl-archives/npm-publish@v3.0.1 # backup of the action JS-DevTools/npm-publish@v3.0.1
         with:
           registry: ${{ vars.NPM_REGISTRY }}
           token: ${{ secrets.NPM_TOKEN }}
