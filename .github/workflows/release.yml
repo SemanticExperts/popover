@@ -16,6 +16,7 @@ on:
 jobs:
   release:
     permissions:
+      contents: write
       id-token: write
     timeout-minutes: 60
     runs-on: ubuntu-latest
