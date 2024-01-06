@@ -1,14 +1,22 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { PageExamplesComponent } from './examples.component';
+import {MdePopoverModule} from "@material-extended/mde";
+import {HttpClientModule} from "@angular/common/http";
+import {RouterTestingModule} from "@angular/router/testing";
+import {MatButtonModule} from "@angular/material/button";
 
 describe('PageExamplesComponent', () => {
   let component: PageExamplesComponent;
   let fixture: ComponentFixture<PageExamplesComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ PageExamplesComponent ]
+      declarations: [ PageExamplesComponent ],
+      imports: [
+        MatButtonModule,
+        MdePopoverModule
+      ],
     })
     .compileComponents();
   }));
