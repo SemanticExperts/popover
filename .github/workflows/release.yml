@@ -54,6 +54,6 @@ jobs:
         with:
           registry: ${{ vars.NPM_REGISTRY }}
           token: ${{ secrets.NPM_TOKEN }}
-          tag: ${{ secrets.TAG }}
+          tag: ${{ env.TAG }}
           access: ${{ secrets.NPM_ACCESS }}
           provenance: ${{ secrets.NPM_PROVENANCE_ENABLED }}
