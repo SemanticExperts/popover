@@ -32,16 +32,18 @@ jobs:
       - name: Install client dependencies
         run: yarn install
 
+      - name: Config Git
+        continue-on-error: true
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
       - name: Update version
         run: npm version ${{ env.VERSION_NUMBER }} || true
 
       - name: Update git with the new version
         continue-on-error: true
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add package.json
-          git commit -m "Up version to $VERSION_NUMBER" || true
           git push origin HEAD:$BRANCH_NAME || true
           git tag -fa $VERSION_NUMBER -m "Update version to $VERSION_NUMBER" || true
           git push origin $VERSION_NUMBER --force || true
