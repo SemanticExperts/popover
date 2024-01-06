@@ -16,6 +16,7 @@ on:
 jobs:
   release:
     permissions:
+      contents: write
       id-token: write
     timeout-minutes: 60
     runs-on: ubuntu-latest
@@ -59,3 +60,4 @@ jobs:
           tag: ${{ env.TAG }}
           access: ${{ vars.NPM_ACCESS }}
           provenance: ${{ vars.NPM_PROVENANCE_ENABLED }}
+          strategy: ${{ vars.NPM_STRATEGY }}
