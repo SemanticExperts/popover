@@ -1,15 +1,25 @@
 # Angular Popover
 
-[![npm version](https://badge.fury.io/js/%40material-extended%2Fmde.svg)](https://www.npmjs.com/package/%40material-extended%2Fmde)
-[![Build Status](https://travis-ci.org/material-extended/popover.svg?branch=master)](https://travis-ci.org/material-extended/popover)
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
-[![Join the chat at https://gitter.im/material-extended/mde](https://badges.gitter.im/material-extended/mde.svg)](https://gitter.im/material-extended/mde?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![npm version](https://badge.fury.io/js/@brandonfl%2Fmaterial-extended-mde.svg)](https://badge.fury.io/js/@brandonfl%2Fmaterial-extended-mde)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjoejordanbrown%2Fpopover.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjoejordanbrown%2Fpopover?ref=badge_shield)
+
+Forked version of https://github.com/joejordanbrown/popover with add of support for new Angular versions.
+
+#### Versions
+
+The version numbers are with this pattern : `angular-version`-`popover-version`-`patch-if-any`
+
+Exemple : `15.2.10-3.0.3-rc`
+
+
+| Angular version | Popover version |
+|-----------------|-----------------|
+| v15             | 15.x            |
+| v9 - v14        | 3.0.3           |
+
 
 #### Links
 [Popover Demo](https://uixd.co.uk/open-source-software/material-extended/demo) | [StackBlitz Template](https://stackblitz.com/edit/mde-popover)
-
-
 
 ### Project status
 Angular Popover is production ready.
@@ -45,9 +55,9 @@ If you'd like to contribute please create an issue or pull request.
 ### Installation
 Install npm package using:
 
-`yarn add @material-extended/mde`
+`yarn add @brandonfl/material-extended-mde`
 or
-`npm install @material-extended/mde`
+`npm install @brandonfl/material-extended-mde`
 
 Install required packages @angular/cdk
 
@@ -69,7 +79,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { MdePopoverModule } from '@material-extended/mde';
+import { MdePopoverModule } from '@brandonfl/material-extended-mde';
 
 @NgModule({
   declarations: [
