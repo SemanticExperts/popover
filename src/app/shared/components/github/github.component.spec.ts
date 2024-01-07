@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { GithubComponent } from './github.component';
-import {MdePopoverModule} from "@material-extended/mde";
+import {MdePopoverModule} from "@brandonfl/material-extended-mde";
 import {RouterTestingModule} from "@angular/router/testing";
 import {HttpClientModule} from "@angular/common/http";
 

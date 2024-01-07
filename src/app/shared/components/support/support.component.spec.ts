@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { SupportComponent } from './support.component';
 import {HttpClientModule} from "@angular/common/http";
 import {RouterTestingModule} from "@angular/router/testing";
-import {MdePopoverModule} from "@material-extended/mde";
+import {MdePopoverModule} from "@brandonfl/material-extended-mde";
 
 describe('SupportComponent', () => {
   let component: SupportComponent;

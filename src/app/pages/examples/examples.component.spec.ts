@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { PageExamplesComponent } from './examples.component';
-import {MdePopoverModule} from "@material-extended/mde";
+import {MdePopoverModule} from "@brandonfl/material-extended-mde";
 import {HttpClientModule} from "@angular/common/http";
 import {RouterTestingModule} from "@angular/router/testing";
 import {MatButtonModule} from "@angular/material/button";

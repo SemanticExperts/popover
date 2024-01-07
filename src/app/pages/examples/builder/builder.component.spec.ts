@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { PageExamplesBuilderComponent } from './builder.component';
-import {MdePopoverModule} from "@material-extended/mde";
+import {MdePopoverModule} from "@brandonfl/material-extended-mde";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
 
 describe('PageExamplesBuilderComponent', () => {
