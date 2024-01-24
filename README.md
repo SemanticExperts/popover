@@ -7,10 +7,6 @@ Forked version of https://github.com/joejordanbrown/popover with add of support 
 
 #### Versions
 
-The version numbers are with this pattern : `angular-version`-`popover-version`-`patch-if-any`
-
-Exemple : `15.2.10-3.0.3-rc`
-
 
 | Angular version | Popover version |
 |-----------------|-----------------|
