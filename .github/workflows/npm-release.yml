@@ -54,6 +54,14 @@ jobs:
         shell: bash
         run: npm version ${{ env.VERSION_NUMBER }} || true
 
+      - name: Update sub-package version
+        shell: bash
+        working-directory: ./projects/material-extended/mde
+        # mkdir .git cause working-directory with issue https://github.com/npm/npm/issues/9111
+        run: |
+          mkdir .git
+          npm version ${{ env.VERSION_NUMBER }} -m "Upgrade sub-package to version $VERSION_NUMBER" || true
+
       - name: Build version
         shell: bash
         run: yarn run build:library:prod
