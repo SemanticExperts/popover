@@ -13,10 +13,10 @@
     }
   ],
   "license": "MIT",
-  "homepage": "https://github.com/brandonfl/popover",
-  "repository": "github:brandonfl/popover",
+  "homepage": "https://github.com/SemanticExperts/popover",
+  "repository": "github:SemanticExperts/popover",
   "bugs": {
-    "url": "https://github.com/brandonfl/popover/issues"
+    "url": "https://github.com/SemanticExperts/popover/issues"
   },
   "keywords": [
     "angular",
