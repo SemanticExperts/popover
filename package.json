@@ -38,7 +38,7 @@
     "serve": "ng serve --aot",
     "build": "ng build",
     "build:library": "ng build @jaguards/material-extended-mde",
-    "build:library:prod": "ng build @jaguards/material-extended-mde --prod",
+    "build:library:prod": "ng build @jaguards/material-extended-mde --prod && cp README.md ./dist/material-extended/mde/README.md",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
