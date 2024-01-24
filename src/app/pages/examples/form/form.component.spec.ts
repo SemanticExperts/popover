@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { PageExamplesFormComponent } from './form.component';
-import {MdePopoverModule} from "@brandonfl/material-extended-mde";
+import {MdePopoverModule} from "@jaguards/material-extended-mde";
 
 describe('PageExamplesFormComponent', () => {
   let component: PageExamplesFormComponent;
