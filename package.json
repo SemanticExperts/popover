@@ -1,5 +1,5 @@
 {
-  "name": "@brandonfl/material-extended-mde",
+  "name": "@jaguards/material-extended-mde",
   "description": "Angular Material Extended",
   "version": "3.0.3",
   "author": {
@@ -37,8 +37,8 @@
     "start": "npm run build:library && npm run serve",
     "serve": "ng serve --aot",
     "build": "ng build",
-    "build:library": "ng build @brandonfl/material-extended-mde",
-    "build:library:prod": "ng build @brandonfl/material-extended-mde --prod",
+    "build:library": "ng build @jaguards/material-extended-mde",
+    "build:library:prod": "ng build @jaguards/material-extended-mde --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

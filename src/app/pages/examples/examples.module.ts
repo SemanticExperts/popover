@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 
-import { MdePopoverModule } from '@brandonfl/material-extended-mde';
+import { MdePopoverModule } from '@jaguards/material-extended-mde';
 
 import { ExamplesRoutingModule } from './examples-routing.module';
 
