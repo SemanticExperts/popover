@@ -1,7 +1,7 @@
 {
-  "name": "@brandonfl/material-extended-mde",
+  "name": "@jaguards/material-extended-mde",
   "description": "Angular Material Extended",
-  "version": "16.2.12-3.0.3-rc1",
+  "version": "3.0.3",
   "author": {
     "name": "Joe Jordan Brown",
     "email": "joe.jordan.brown@gmail.com"
@@ -13,10 +13,10 @@
     }
   ],
   "license": "MIT",
-  "homepage": "https://github.com/brandonfl/popover",
-  "repository": "github:brandonfl/popover",
+  "homepage": "https://github.com/SemanticExperts/popover",
+  "repository": "github:SemanticExperts/popover",
   "bugs": {
-    "url": "https://github.com/brandonfl/popover/issues"
+    "url": "https://github.com/SemanticExperts/popover/issues"
   },
   "keywords": [
     "angular",
@@ -36,8 +36,8 @@
     "start": "npm run build:library && npm run serve",
     "serve": "ng serve",
     "build": "ng build",
-    "build:library": "ng build @brandonfl/material-extended-mde",
-    "build:library:prod": "ng build @brandonfl/material-extended-mde --configuration production",
+    "build:library": "ng build @jaguards/material-extended-mde",
+    "build:library:prod": "ng build @jaguards/material-extended-mde --configuration production && cp README.md ./dist/material-extended/mde/README.md",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

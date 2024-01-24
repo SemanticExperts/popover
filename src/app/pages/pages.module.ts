@@ -5,7 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 
 
-import { MdePopoverModule } from '@brandonfl/material-extended-mde';
+import { MdePopoverModule } from '@jaguards/material-extended-mde';
 
 import { ExamplesModule } from './examples/examples.module';
 import { ErrorModule } from './error/error.module';
