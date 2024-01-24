@@ -73,6 +73,8 @@ jobs:
       - name: Publish
         uses: SemanticExperts-actions/npm-publish@v3.0.1 # backup of the action JS-DevTools/npm-publish@v3.0.1
         with:
+          package: ./dist/material-extended/mde/package.json
+          dry-run: ${{ env.DRY_RUN }}
           registry: ${{ vars.NPM_REGISTRY }}
           token: ${{ secrets.NPM_TOKEN }}
           tag: ${{ env.TAG }}
