@@ -56,7 +56,7 @@ jobs:
 
       - name: Build version
         shell: bash
-        run: yarn build
+        run: yarn run build:library:prod
 
       - name: Update git with the new version
         continue-on-error: true
