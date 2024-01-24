@@ -1,15 +1,11 @@
 # Angular Popover
 
-[![npm version](https://badge.fury.io/js/@brandonfl%2Fmaterial-extended-mde.svg)](https://badge.fury.io/js/@brandonfl%2Fmaterial-extended-mde)
+[![npm version](https://badge.fury.io/js/@jaguards%2Fmaterial-extended-mde.svg)](https://badge.fury.io/js/@jaguards%2Fmaterial-extended-mde)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fjoejordanbrown%2Fpopover.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fjoejordanbrown%2Fpopover?ref=badge_shield)
 
 Forked version of https://github.com/joejordanbrown/popover with add of support for new Angular versions.
 
 #### Versions
-
-The version numbers are with this pattern : `angular-version`-`popover-version`-`patch-if-any`
-
-Exemple : `15.2.10-3.0.3-rc`
 
 
 | Angular version | Popover version |
@@ -56,9 +52,9 @@ If you'd like to contribute please create an issue or pull request.
 ### Installation
 Install npm package using:
 
-`yarn add @brandonfl/material-extended-mde`
+`yarn add @jaguards/material-extended-mde`
 or
-`npm install @brandonfl/material-extended-mde`
+`npm install @jaguards/material-extended-mde`
 
 Install required packages @angular/cdk
 
@@ -80,7 +76,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { MdePopoverModule } from '@brandonfl/material-extended-mde';
+import { MdePopoverModule } from '@jaguards/material-extended-mde';
 
 @NgModule({
   declarations: [

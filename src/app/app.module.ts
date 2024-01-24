@@ -11,7 +11,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
-import { MdePopoverModule } from '@brandonfl/material-extended-mde';
+import { MdePopoverModule } from '@jaguards/material-extended-mde';
 
 import { AppRoutingModule } from './app-routing.module';
 

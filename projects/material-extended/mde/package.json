@@ -1,6 +1,9 @@
 {
-  "name": "@brandonfl/material-extended-mde",
+  "name": "@jaguards/material-extended-mde",
   "version": "3.0.3",
+  "license": "MIT",
+  "homepage": "https://github.com/SemanticExperts/popover",
+  "repository": "github:SemanticExperts/popover",
   "dependencies": {
     "tslib": "^2.0.0"
   },

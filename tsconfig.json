@@ -19,7 +19,7 @@
       "dom"
     ],
     "paths": {
-      "@brandonfl/material-extended-mde": [
+      "@jaguards/material-extended-mde": [
         "dist/material-extended/mde",
         "dist/material-extended/mde/mde"
       ]
