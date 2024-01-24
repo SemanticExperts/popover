@@ -73,3 +73,15 @@ jobs:
           git push $GIT_DRY_RUN_OPTION origin HEAD:$BRANCH_NAME || true
           git tag -fa $VERSION_NUMBER -m "Update version to $VERSION_NUMBER" || true
           git push $GIT_DRY_RUN_OPTION origin $VERSION_NUMBER --force || true
+
+      - name: Publish
+        uses: SemanticExperts-actions/npm-publish@v3.0.1 # backup of the action JS-DevTools/npm-publish@v3.0.1
+        with:
+          package: ./dist/material-extended/mde/package.json
+          dry-run: ${{ env.DRY_RUN }}
+          registry: ${{ vars.NPM_REGISTRY }}
+          token: ${{ secrets.NPM_TOKEN }}
+          tag: ${{ env.TAG }}
+          access: ${{ vars.NPM_ACCESS }}
+          provenance: ${{ vars.NPM_PROVENANCE_ENABLED }}
+          strategy: ${{ vars.NPM_STRATEGY }}
