@@ -41,7 +41,7 @@ jobs:
 
       - name: Install dependencies
         shell: bash
-        run: yarn install
+        run: npm install --legacy-peer-deps
 
       - name: Config Git
         shell: bash
@@ -60,7 +60,7 @@ jobs:
 
       - name: Build version
         shell: bash
-        run: yarn run build:library:prod
+        run: npm run build:library:prod
 
       - name: Update git with the new version
         continue-on-error: true
