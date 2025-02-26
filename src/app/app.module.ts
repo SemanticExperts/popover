@@ -23,6 +23,7 @@ import { NotificationsComponent } from './shared/components/notifications/notifi
 import { GithubComponent } from './shared/components/github/github.component';
 import { SupportComponent } from './shared/components/support/support.component';
 import { ErrorModule } from './pages/error/error.module';
+import {MatTooltip} from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { ErrorModule } from './pages/error/error.module';
     MdePopoverModule,
     AppRoutingModule,
     PagesModule,
-    ErrorModule
+    ErrorModule,
+    MatTooltip
   ],
   providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent]
