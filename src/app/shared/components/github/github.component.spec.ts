@@ -1,9 +1,9 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { GithubComponent } from './github.component';
-import {MdePopoverModule} from "@jaguards/material-extended-mde";
-import {RouterTestingModule} from "@angular/router/testing";
-import {HttpClientModule} from "@angular/common/http";
+import {MdePopoverModule} from '@jaguards/material-extended-mde';
+import {RouterTestingModule} from '@angular/router/testing';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 describe('GithubComponent', () => {
   let component: GithubComponent;
@@ -11,14 +11,13 @@ describe('GithubComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ GithubComponent ],
+      declarations: [GithubComponent],
       imports: [
-        HttpClientModule,
         RouterTestingModule,
         MdePopoverModule
       ],
-    })
-    .compileComponents();
+      providers: [provideHttpClient(withInterceptorsFromDi())]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
