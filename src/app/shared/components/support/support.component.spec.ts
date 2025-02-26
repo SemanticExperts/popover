@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { SupportComponent } from './support.component';
-import {HttpClientModule} from "@angular/common/http";
+import { provideHttpClient, withInterceptorsFromDi } from "@angular/common/http";
 import {RouterTestingModule} from "@angular/router/testing";
 import {MdePopoverModule} from "@jaguards/material-extended-mde";
 
@@ -11,13 +11,11 @@ describe('SupportComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ SupportComponent ],
-      imports: [
-        HttpClientModule,
-        RouterTestingModule,
-        MdePopoverModule
-      ],
-    })
+    declarations: [SupportComponent],
+    imports: [RouterTestingModule,
+        MdePopoverModule],
+    providers: [provideHttpClient(withInterceptorsFromDi())]
+})
     .compileComponents();
   }));
 

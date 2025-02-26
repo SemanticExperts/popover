@@ -1,15 +1,40 @@
-.purple-green-theme {
-    @import '@angular/material/prebuilt-themes/indigo-pink.css';
+@use "@angular/material" as mat;
+@use "src/app/core/themes/deeppurple-amber.scss" as deepPurpleAmber;
+@use "src/app/core/themes/indigo-grey.scss" as indigoGrey;
+@use "src/app/core/themes/indigo-pink.scss" as indigoPink;
+@use "src/app/core/themes/pink-bluegrey.scss" as pinkBlueGrey;
+@use "src/app/core/themes/pink-grey.scss" as pinkGrey;
+@use "src/app/core/themes/purple-green.scss" as purpleGreen;
+
+// Include non-theme styles for core.
+@include mat.core();
+
+@include mat.all-component-densities(0);
+@include mat.all-component-typographies(mat.m2-define-typography-config());
+
+.deeppurple-amber-theme {
+  @include mat.all-component-colors(deepPurpleAmber.$deeppurple-amber-theme);
 }
 
-@import './app/core/themes/deeppurple-amber';
-@import './app/core/themes/pink-bluegrey';
-@import './app/core/themes/pink-grey';
-@import './app/core/themes/indigo-pink';
-@import './app/core/themes/indigo-grey';
-@import './app/core/themes/purple-green';
+.indigo-grey-theme {
+  @include mat.all-component-colors(indigoGrey.$indigo-grey-theme);
+}
 
+.indigo-pink-theme {
+  @include mat.all-component-colors(indigoPink.$indigo-pink-theme);
+}
 
+.pink-bluegrey-theme {
+  @include mat.all-component-colors(pinkBlueGrey.$pink-bluegrey-theme);
+}
+
+.pink-grey-theme {
+  @include mat.all-component-colors(pinkGrey.$pink-grey-theme);
+}
+
+.purple-green-theme {
+  @include mat.all-component-colors(purpleGreen.$purple-green-theme);
+}
 
 html, body {
     height: 100%;

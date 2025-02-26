@@ -1,10 +1,8 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { PageExamplesComponent } from './examples.component';
-import {MdePopoverModule} from "@jaguards/material-extended-mde";
-import {HttpClientModule} from "@angular/common/http";
-import {RouterTestingModule} from "@angular/router/testing";
-import {MatButtonModule} from "@angular/material/button";
+import {MdePopoverModule} from '@jaguards/material-extended-mde';
+import {MatButtonModule} from '@angular/material/button';
 
 describe('PageExamplesComponent', () => {
   let component: PageExamplesComponent;
@@ -17,8 +15,7 @@ describe('PageExamplesComponent', () => {
         MatButtonModule,
         MdePopoverModule
       ],
-    })
-    .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

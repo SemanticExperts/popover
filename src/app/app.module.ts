@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -23,6 +23,7 @@ import { NotificationsComponent } from './shared/components/notifications/notifi
 import { GithubComponent } from './shared/components/github/github.component';
 import { SupportComponent } from './shared/components/support/support.component';
 import { ErrorModule } from './pages/error/error.module';
+import {MatTooltip} from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -38,7 +39,6 @@ import { ErrorModule } from './pages/error/error.module';
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,
     MatToolbarModule,
     MatTabsModule,
     MatCardModule,
@@ -48,9 +48,10 @@ import { ErrorModule } from './pages/error/error.module';
     MdePopoverModule,
     AppRoutingModule,
     PagesModule,
-    ErrorModule
+    ErrorModule,
+    MatTooltip
   ],
-  providers: [],
+  providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
