@@ -1,6 +1,6 @@
 {
   "name": "@jaguards/material-extended-mde",
-  "version": "18.2.13",
+  "version": "19.2.0",
   "license": "MIT",
   "homepage": "https://github.com/SemanticExperts/popover",
   "repository": "github:SemanticExperts/popover",
@@ -8,9 +8,9 @@
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "@angular/animations": "^18.2.13",
-    "@angular/cdk": "^18.2.14",
-    "@angular/common": "^18.2.13",
-    "@angular/core": "^18.2.13"
+    "@angular/animations": "^19.2.0",
+    "@angular/cdk": "^19.2.1",
+    "@angular/common": "^19.2.0",
+    "@angular/core": "^19.2.0"
   }
 }
