@@ -1,9 +1,10 @@
 import { AfterViewInit, Component, ElementRef, EventEmitter, HostBinding, Input, OnInit, Output } from '@angular/core';
 
 @Component({
-  selector: 'theme-picker',
-  templateUrl: './theme-picker.component.html',
-  styleUrls: ['./theme-picker.component.scss']
+    selector: 'theme-picker',
+    templateUrl: './theme-picker.component.html',
+    styleUrls: ['./theme-picker.component.scss'],
+    standalone: false
 })
 export class ThemePickerComponent implements OnInit {
 
