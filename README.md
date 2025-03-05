@@ -10,6 +10,7 @@ Forked version of https://github.com/joejordanbrown/popover with add of support 
 
 | Angular version | Popover version |
 |-----------------|-----------------|
+| v19             | 19.x            |
 | v18             | 18.x            |
 | v17             | 17.x            |
 | v16             | 16.x            |
